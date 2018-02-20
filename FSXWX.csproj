@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\FSXWX.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{646E5414-E792-4978-84EF-BA9D56E30B6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FSXWX</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.FlightSimulator.SimConnect" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FSUIPC\IOffset.cs" />
+    <Compile Include="FSUIPC\Offset`1.cs" />
+    <Compile Include="FSUIPC\FsLatLonPoint.cs" />
+    <Compile Include="FSUIPC\FsLatLonQuadrilateral.cs" />
+    <Compile Include="FSUIPC\FlightSim.cs" />
+    <Compile Include="FSUIPC\FSUIPCError.cs" />
+    <Compile Include="FSUIPC\MessageReturnCode.cs" />
+    <Compile Include="FSUIPC\IPCMessageType.cs" />
+    <Compile Include="FSUIPC\fsuipcDataType.cs" />
+    <Compile Include="FSUIPC\AITrafficStatus.cs" />
+    <Compile Include="FSUIPC\FSFuelTanks.cs" />
+    <Compile Include="FSUIPC\SendMessageTimeoutFlags.cs" />
+    <Compile Include="FSUIPC\PageProtection.cs" />
+    <Compile Include="FSUIPC\DesiredAccess.cs" />
+    <Compile Include="FSUIPC\Win32.cs" />
+    <Compile Include="FSUIPC\FsLatitudeSpan.cs" />
+    <Compile Include="FSUIPC\FsLatitude.cs" />
+    <Compile Include="FSUIPC\FsLongitude.cs" />
+    <Compile Include="FSUIPC\ATCIdentifier.cs" />
+    <Compile Include="FSUIPC\AITrafficServices.cs" />
+    <Compile Include="FSUIPC\UserInputType.cs" />
+    <Compile Include="FSUIPC\ModifierKeys.cs" />
+    <Compile Include="FSUIPC\StateChange.cs" />
+    <Compile Include="FSUIPC\UserInputKeyEventArgs.cs" />
+    <Compile Include="FSUIPC\UserInputButtonEventArgs.cs" />
+    <Compile Include="FSUIPC\UserInputMenuEventArgs.cs" />
+    <Compile Include="FSUIPC\UserInputServices.cs" />
+    <Compile Include="FSUIPC\FsPayloadStation.cs" />
+    <Compile Include="FSUIPC\FsFuelTank.cs" />
+    <Compile Include="FSUIPC\PayloadServices.cs" />
+    <Compile Include="FSUIPC\FsLongitudeSpan.cs" />
+    <Compile Include="FSUIPC\ConnectionInfo.cs" />
+    <Compile Include="FSUIPC\FSUIPCConnection.cs" />
+    <Compile Include="FSUIPC\FSRunwayDesignator.cs" />
+    <Compile Include="FSUIPC\FSRunway.cs" />
+    <Compile Include="FSUIPC\AIPlaneInfo.cs" />
+    <Compile Include="FSUIPC\FSUIPCException.cs" />
+    <Compile Include="FSXWX\GZip.cs" />
+    <Compile Include="FSXWX\LogClass.cs" />
+    <Compile Include="FSXWX\WxDwcClass.cs" />
+    <Compile Include="FSXWX\Form1.cs" />
+    <Compile Include="FSXWX\GeoClass.cs" />
+    <Compile Include="FSXWX\Program.cs" />
+    <Compile Include="FSXWX\WxGridClass.cs" />
+    <Compile Include="FSXWX\WxInjClass.cs" />
+    <Compile Include="FSXWX\Properties\Resources.cs" />
+    <Compile Include="FSXWX\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FSXWX\ezdok.exe" />
+    <EmbeddedResource Include="FSXWX\Form1.resx" />
+    <EmbeddedResource Include="FSXWX\Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

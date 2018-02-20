@@ -1,0 +1,31 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: FSUIPC.FSUIPCError
+// Assembly: FSXWX, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 350F6F96-0E70-487C-B582-1157C6BB993A
+// Assembly location: C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\FSXWX.exe
+
+namespace FSUIPC
+{
+  public enum FSUIPCError
+  {
+    FSUIPC_ERR_OK = 0,
+    FSUIPC_ERR_OPEN = 1,
+    FSUIPC_ERR_NOFS = 2,
+    FSUIPC_ERR_REGMSG = 3,
+    FSUIPC_ERR_ATOM = 4,
+    FSUIPC_ERR_MAP = 5,
+    FSUIPC_ERR_VIEW = 6,
+    FSUIPC_ERR_VERSION = 7,
+    FSUIPC_ERR_WRONGFS = 8,
+    FSUIPC_ERR_NOTOPEN = 9,
+    FSUIPC_ERR_NODATA = 10, // 0x0000000A
+    FSUIPC_ERR_TIMEOUT = 11, // 0x0000000B
+    FSUIPC_ERR_SENDMSG = 12, // 0x0000000C
+    FSUIPC_ERR_DATA = 13, // 0x0000000D
+    FSUIPC_ERR_RUNNING = 14, // 0x0000000E
+    FSUIPC_ERR_SIZE = 15, // 0x0000000F
+    FSUIPC_ERR_WRITE_OVERFLOW = 999, // 0x000003E7
+    FSUIPC_KEY_SLOTS_FULL = 65536, // 0x00010000
+    FSUIPC_BUTTON_SLOTS_FULL = 65537, // 0x00010001
+  }
+}
